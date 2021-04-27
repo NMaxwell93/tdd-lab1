@@ -59,4 +59,14 @@ describe("Pig latin translate", () => {
         let result = translateToPig("can't");
         expect(result).toEqual("an'tcay")
     });
+
+    test("starts with two same vowels", () => {
+        let result = translateToPig("oops");
+        expect(result).toEqual("oopsway")
+    });
+
+    test("underneath", () => {
+        let result = translateToPig("underneath");
+        expect(result).toEqual("underneathway")
+    });
 })
